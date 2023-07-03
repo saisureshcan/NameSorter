@@ -4,7 +4,9 @@ jdk: openjdk17
 
 script:
   - ./mvnw clean install -B
-  - ./mvnw spring-boot:run -Dspring-boot.run.arguments=unsorted-names-list.txt
 
 before_install:
   - chmod +x mvnw
+
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
