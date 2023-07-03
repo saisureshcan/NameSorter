@@ -1,6 +1,6 @@
 sudo: true
 language: java
-jdk: oraclejdk11
+jdk: openjdk17
 
 script:
   - ./mvnw clean install -B
