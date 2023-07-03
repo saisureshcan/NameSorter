@@ -1,5 +1,9 @@
+sudo: true
 language: java
 jdk: oraclejdk11
 
 script:
-  - ./mvnw clean install -B
+  - ./mvn clean install
+
+before_install:
+  - chmod +x mvnw
