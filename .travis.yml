@@ -1,9 +1,19 @@
 sudo: true
 language: java
-jdk: oraclejdk11
+jdk: openjdk17
 
 script:
-  - ./mvn clean install
+  - ./mvnw clean install -B
+  - ./mvnw spring-boot:run -Dspring-boot.run.arguments=unsorted-names-list.txt
 
 before_install:
   - chmod +x mvnw
+
+#
+#after_success:
+#  - bash <(curl -s https://codecov.io/bash)
+
+#deploy:
+#  provider: heroku
+#  api_key: ...
+#  skip_cleanup: true

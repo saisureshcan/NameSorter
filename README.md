@@ -37,6 +37,23 @@ You can replace the filename above with the desired file name that need to be so
 
 If you are executing the application from an IDE make sure to add the input parameter in the <code>Run Configurations</code>
 
+## Travis CI/CD Integration
+
+<code>.travis.yml</code> is configured to implement Continuous Integration and Deployment. Though the setup is not entirely complete there is a base set up that can be improved upon.
+
+However, this GitHub repository is integrated to Travis CI and every commit triggers a build and executes tests and build the application.
+
+Travis builds URL: <code> https://app.travis-ci.com/github/saisureshcan/NameSorter </code>
+
+## Acceptance Criteria
+
+1. The solution is available for review on GitHub along with Travis Integration.
+2. The names are sorted according to the given requirement criteria.
+3. The sorted listed is printed to console/screen
+4. A new file is created/updated with the sorted list of names, sorted-names-list.txt.
+5. Unit tests created.
+6. Appropriate comments and documentation have been provided. 
+
 ## Notes
 
 1. The input file is expected to contain Names with at least one given name and one last name.

@@ -1,6 +1,0 @@
-com/company/project/model/FullName.class
-com/company/project/io/FullNamesFileReader.class
-com/company/project/NameSorterApplication.class
-com/company/project/service/SortingLastNameServiceImpl.class
-com/company/project/service/SortingLastNameService.class
-com/company/project/io/SortedNamesFileWriter.class
