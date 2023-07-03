@@ -7,7 +7,7 @@ and may have up to 3 given names.
 
 These pieces of software are required for the successful setup and execution of this project
 
-1. Java 11 or Higher 
+1. Java 17
 2. GIT
 3. Maven
 
