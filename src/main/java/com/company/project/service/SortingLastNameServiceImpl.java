@@ -34,6 +34,11 @@ public class SortingLastNameServiceImpl implements SortingLastNameService{
         // Convert sorted name objects to list of Strings
         ArrayList<String> sortedNamesStringList = fullNameToStringConversion(fullNames);
 
+        //printing to screen
+        for (String name: sortedNamesStringList) {
+            System.out.println(name);
+        }
+
         //Write the sorted list of names into file
         writeToFile(sortedNamesStringList,fileWriteName);
 

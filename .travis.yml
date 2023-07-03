@@ -8,3 +8,12 @@ script:
 
 before_install:
   - chmod +x mvnw
+
+#
+#after_success:
+#  - bash <(curl -s https://codecov.io/bash)
+
+#deploy:
+#  provider: heroku
+#  api_key: ...
+#  skip_cleanup: true
